@@ -320,6 +320,7 @@ head, body{
     width: 30%;
     height: 300px;
     margin-right: 2vw;
+    cursor: pointer;
 }
 
 #cards .cardelement #cardimage{
