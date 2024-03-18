@@ -3,11 +3,16 @@
     src: url(./fonts/matter-light.ttf);
 }
 
+@font-face {
+    font-family: "matter-regular";
+    src: url(./fonts/matter-regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "matter-light";
+    font-family: "matter-regular";
     color: #000;
 }
 
@@ -46,10 +51,48 @@ head, body{
 
 #nav #navr a{
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #nav #navr i{
     cursor: pointer;
     font-size: 20px;
+    font-weight: 600;
+}
+
+#homepage #headings{
+    width: 100%;
+    padding: 11vw 13vw;
+}
+
+#homepage #headings h3{
+    letter-spacing: -1px;
+}
+
+#homepage #headings #threeheadings{
+        display: flex;
+        gap: 30px;
+}
+
+#threeheadings h1{
+    font-size: 7vw;
+    letter-spacing: -4px;
+    color: transparent;
+    -webkit-text-stroke: 0.1px #000;   
+}
+
+#homefooter{
+    width: 100%;
+    padding: 0 13vw;
+    font-size: 1.8vw;
+    padding-top: 1vw;
+}
+
+#homefooter p{
+    letter-spacing: -1px;
+}
+
+#homefooter p::selection{
+    color: #fff;
+    background-color: #000;
 }
