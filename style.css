@@ -1,18 +1,18 @@
 @font-face {
-    font-family: "matter-light";
-    src: url(./fonts/matter-light.ttf);
+    font-family: "AvertaCY-Light";
+    src: url(./fonts/AvertaCY-Light.ttf);
 }
 
 @font-face {
-    font-family: "matter-regular";
-    src: url(./fonts/matter-regular.ttf);
+    font-family: "AvertaCY-Bold";
+    src: url(./fonts/AvertaCY-Bold.ttf);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "matter-regular";
+    font-family: "AvertaCY-Light";
     color: #000;
 }
 
@@ -51,7 +51,7 @@ head, body{
 
 #nav #navr a{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #nav #navr i{
@@ -66,7 +66,13 @@ head, body{
 }
 
 #homepage #headings h3{
+    font-size: 1.5vw;
     letter-spacing: -1px;
+}
+
+#homepage #headings h3::selection{
+    color: #fff;
+    background-color: #000;
 }
 
 #homepage #headings #threeheadings{
@@ -75,10 +81,11 @@ head, body{
 }
 
 #threeheadings h1{
+    font-family: "AvertaCY-Bold";
     font-size: 7vw;
     letter-spacing: -4px;
     color: transparent;
-    -webkit-text-stroke: 0.1px #000;   
+    -webkit-text-stroke: 1px #000;   
 }
 
 #homefooter{
@@ -90,6 +97,7 @@ head, body{
 
 #homefooter p{
     letter-spacing: -1px;
+    font-weight: 600;
 }
 
 #homefooter p::selection{
