@@ -63,6 +63,7 @@ head, body{
 #homepage #headings{
     width: 100%;
     padding: 11vw 13vw;
+    cursor: context-menu;
 }
 
 #homepage #headings h3{
@@ -85,7 +86,23 @@ head, body{
     font-size: 7vw;
     letter-spacing: -4px;
     color: transparent;
-    -webkit-text-stroke: 1px #000;   
+    -webkit-text-stroke: 1px #000;
+    cursor: pointer;
+}
+
+#threeheadings h1:nth-child(1):hover{
+    color: #000;
+    transition: all ease 0.5s;
+}
+
+#threeheadings h1:nth-child(2):hover{
+    color: #000;
+    transition: all ease 0.5s;
+}
+
+#threeheadings h1:nth-child(3):hover{
+    color: #000;
+    transition: all ease 0.5s;
 }
 
 #homefooter{
@@ -93,6 +110,7 @@ head, body{
     padding: 0 13vw;
     font-size: 1.8vw;
     padding-top: 1vw;
+    cursor: context-menu;
 }
 
 #homefooter p{
@@ -110,6 +128,7 @@ head, body{
     min-height: 100vh;
     padding-top: 8vw;
     padding: 8vw 13vw;
+    cursor: context-menu;
 }
 
 #featured #fheading h1{
@@ -130,6 +149,7 @@ head, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: context-menu;
 }
 
 #felements #fleft{
@@ -154,7 +174,6 @@ head, body{
     font-size: 2.5vw;
     line-height: 1;
     font-weight: 700;
-    text-transform: capitalize;
     margin: 1vw 0;
 }
 
@@ -202,6 +221,7 @@ head, body{
 #resource{
     width: 100%;
     padding: 0 13vw;
+    cursor: context-menu;
 }
 
 #resource h1{
@@ -290,6 +310,7 @@ head, body{
 #newday{
     width: 100%;
     padding: 7vw 13vw;
+    cursor: context-menu;
 }
 
 #newday h1{
@@ -347,6 +368,7 @@ head, body{
     background-color: #000;
     width: 100%;
     height: 100vh;
+    cursor: context-menu;
 }
 
 #footer #footerheadings{
@@ -391,6 +413,7 @@ head, body{
     color: #fff;
     font-size: 0.9vw;
     margin-top: 0.5vw;
+    cursor: pointer;
 }
 
 #footerend #fright{
