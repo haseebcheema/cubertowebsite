@@ -135,8 +135,11 @@ head, body{
 #felements #fleft{
     width: 45%;
     height: inherit;
-    border: 1px solid green;
     overflow: auto;
+}
+
+#felements #fleft::-webkit-scrollbar{
+    display: none;
 }
 
 #fleft .fleftelm {
