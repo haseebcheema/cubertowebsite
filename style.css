@@ -180,3 +180,20 @@ head, body{
     height: 90%;
     background-color: blue;
 }
+
+#btndiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+#btndiv button {
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: transparent;
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
