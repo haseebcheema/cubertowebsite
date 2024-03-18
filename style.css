@@ -1,10 +1,55 @@
+@font-face {
+    font-family: "matter-light";
+    src: url(./fonts/matter-light.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "matter-light";
+    color: #000;
 }
 
 head, body{
     width: 100%;
     height: 100%;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+#homepage{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+#nav img{
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#nav #navr{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#nav #navr a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#nav #navr i{
+    cursor: pointer;
+    font-size: 20px;
 }
