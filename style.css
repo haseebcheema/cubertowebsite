@@ -107,7 +107,7 @@ head, body{
 
 #featured{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 8vw;
     padding: 8vw 13vw;
 }
@@ -185,7 +185,7 @@ head, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vw;
+    margin-top: 6vw;
 }
 
 #btndiv button {
@@ -196,4 +196,25 @@ head, body{
     font-size: 1vw;
     font-weight: 600;
     letter-spacing: -1px;
+}
+
+#resource{
+    width: 100%;
+    padding: 0 13vw;
+}
+
+#resource h1{
+    font-family: "AvertaCY-Bold"; 
+    letter-spacing: -1px;
+    font-size: 3.3vw;
+    line-height: 1;
+    width: 50%;
+}
+
+#resource p{
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    width: 50%;
 }
