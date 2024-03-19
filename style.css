@@ -212,6 +212,12 @@ head, body{
     background-color: blue;
 }
 
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #btndiv {
     display: flex;
     align-items: center;
@@ -379,7 +385,7 @@ head, body{
 #footer{
     background-color: #000;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     cursor: context-menu;
 }
 
