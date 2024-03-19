@@ -18,20 +18,20 @@ function magneticEffect(){
     const icon = document.querySelector("#navr>i");
     
     // get dimensions of the icon
-    let boundindRect = icon.getBoundingClientRect();
+    let boundingRect = icon.getBoundingClientRect();
     window.addEventListener("resize", function(dets){
         // update dimensions
-        boundindRect = icon.getBoundingClientRect(); 
+        boundingRect = icon.getBoundingClientRect(); 
     });
 
     // mousemove event
     icon.addEventListener("mousemove", function(dets){
-        const mouseX = dets.pageX - boundindRect.left;
-        const mouseY = dets.pageY - boundindRect.top;
+        const mouseX = dets.pageX - boundingRect.left;
+        const mouseY = dets.pageY - boundingRect.top;
 
         gsap.to(icon, {
-            x: (mouseX - boundindRect.width / 2) * 0.4,
-            y: (mouseY - boundindRect.height / 2) * 0.4,
+            x: (mouseX - boundingRect.width / 2) * 0.4,
+            y: (mouseY - boundingRect.height / 2) * 0.4,
             duration: 0.8,
             ease: "elastic.out(1,0.3)"
         });
