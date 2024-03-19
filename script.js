@@ -13,6 +13,41 @@ function movingCircle(){
     });
 }
 
+// magnetic effect
+function magneticEffect(){
+    const icon = document.querySelector("#navr>i");
+    
+    // get dimensions of the icon
+    let boundindRect = icon.getBoundingClientRect();
+    window.addEventListener("resize", function(dets){
+        // update dimensions
+        boundindRect = icon.getBoundingClientRect(); 
+    });
+
+    // mousemove event
+    icon.addEventListener("mousemove", function(dets){
+        const mouseX = dets.pageX - boundindRect.left;
+        const mouseY = dets.pageY - boundindRect.top;
+
+        gsap.to(icon, {
+            x: (mouseX - boundindRect.width / 2) * 0.4,
+            y: (mouseY - boundindRect.height / 2) * 0.4,
+            duration: 0.8,
+            ease: "elastic.out(1,0.3)"
+        });
+    });
+
+    // mouseleave event
+    icon.addEventListener("mouseleave", function(){
+        gsap.to(icon, {
+            x: 0,
+            y: 0,
+            duration: 0.8,
+            ease: "elastic.out(1,0.3)"
+        });
+    });
+}
+
 // preview videos when cursor moves on headings
 function previewVideo() {
     var headelems = document.querySelectorAll("#threeheadings h1");
@@ -88,5 +123,7 @@ function stopandscroll(){
 
 // calling functions
 movingCircle();
+magneticEffect();
 previewVideo();
 stopandscroll();
+
