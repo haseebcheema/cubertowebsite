@@ -222,14 +222,14 @@ head, body{
     object-fit: cover;
 }
 
-#btndiv {
+#btndiv{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 6vw;
 }
 
-#btndiv button {
+#btndiv button{
     padding: 1.3vw 2.5vw;
     border-radius: 100px;
     border: 2px solid #e6e6e6;
@@ -238,6 +238,12 @@ head, body{
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
+    transition: all ease 0.8s;
+}
+
+#btndiv button:hover{
+    color: #fff;
+    background-color: #000;
 }
 
 #resource{
@@ -327,6 +333,12 @@ head, body{
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
+    transition: all ease 0.8s;
+}
+
+#buttondiv button:hover{
+    color: #fff;
+    background-color: #000;
 }
 
 #newday{
