@@ -30,10 +30,12 @@ function magneticEffect(){
         const mouseY = dets.pageY - boundingRect.top;
 
         gsap.to(icon, {
-            x: (mouseX - boundingRect.width / 2) * 0.4,
-            y: (mouseY - boundingRect.height / 2) * 0.4,
+            x: (mouseX - boundingRect.width / 2) * 0.5,
+            y: (mouseY - boundingRect.height / 2) * 0.5,
             duration: 0.8,
-            ease: "elastic.out(1,0.3)"
+            ease: "elastic.out(1,0.3)",
+            color: "#fff",
+            backgroundColor: "#000"
         });
     });
 
@@ -43,7 +45,9 @@ function magneticEffect(){
             x: 0,
             y: 0,
             duration: 0.8,
-            ease: "elastic.out(1,0.3)"
+            ease: "elastic.out(1,0.3)",
+            color: "#000",
+            backgroundColor: "#fff"
         });
     });
 }
@@ -63,8 +67,8 @@ function previewVideo() {
             var circle = document.querySelector("#circle");
             circle.style.width = "200px";
             circle.style.height = "200px";
-            var circleTop = event.clientY - 300; // Half of the circle's height
-            var circleLeft = event.clientX - 200; // Half of the circle's width
+            var circleTop = event.clientY - 320; // Half of the circle's height
+            var circleLeft = event.clientX - 550; // Half of the circle's width
             circle.style.top = `${circleTop}px`;
             circle.style.left = `${circleLeft}px`;
 
