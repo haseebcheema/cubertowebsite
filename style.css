@@ -27,7 +27,7 @@ head, body{
     background-color: #fff;
     border-radius: 50%;
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     mix-blend-mode: difference;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
@@ -235,16 +235,16 @@ head, body{
     align-items: center;
 }
 
-#fright .images{
+#fright .video{
     width: 90%;
     height: 90%;
-    background-color: blue;
 }
 
-#fright .images img{
+#fright .video video{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 #btndiv{
