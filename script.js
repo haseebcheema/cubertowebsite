@@ -19,7 +19,7 @@ function magneticEffect(){
     
     // get dimensions of the icon
     let boundingRect = icon.getBoundingClientRect();
-    window.addEventListener("resize", function(dets){
+    document.addEventListener("resize", function(dets){
         // update dimensions
         boundingRect = icon.getBoundingClientRect(); 
     });

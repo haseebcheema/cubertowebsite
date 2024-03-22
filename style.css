@@ -43,27 +43,51 @@ head, body{
 }
 
 #nav{
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    z-index: 10;
 }
 
-#nav img{
-    width: 90px;
-    height: 50px;
+#nav h1{
+    font-family: "AvertaCY-Bold";
+    font-size: 2vw;
+    letter-spacing: -0.5px;
     cursor: pointer;
 }
 
 #nav #navr{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
 }
 
 #nav #navr a{
     text-decoration: none;
     font-weight: 600;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+#navr a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+#navr a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #nav #navr i{
@@ -79,6 +103,7 @@ head, body{
 #homepage #headings{
     width: 100%;
     padding: 11vw 13vw;
+    padding-top: 16vw;
     cursor: context-menu;
 }
 
@@ -238,7 +263,7 @@ head, body{
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
-    transition: all ease 0.8s;
+    transition: all ease 0.3s;
 }
 
 #btndiv button:hover{
@@ -248,8 +273,11 @@ head, body{
 
 #resource{
     width: 100%;
-    padding: 0 13vw;
+    padding: 8vw 13vw 0 13vw;
+    background-color: #161616;
     cursor: context-menu;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
 }
 
 #resource h1{
@@ -258,6 +286,7 @@ head, body{
     font-size: 3.3vw;
     line-height: 1;
     width: 50%;
+    color: #fff;
 }
 
 #resource p{
@@ -266,10 +295,13 @@ head, body{
     font-size: 1.5vw;
     margin-top: 2vw;
     width: 50%;
+    color: #fff;
 }
 
 #slider{
+    background-color: #161616;
     width: 100%;
+    min-height: 90vh;
     padding: 5vw 7vw;
     white-space: nowrap;
     overflow: auto;
@@ -311,6 +343,7 @@ head, body{
     font-size: 1.4vw;
     line-height: 1;
     font-weight: 700;
+    color: #fff;
 }
 
 .btndiv:nth-child(1){
@@ -318,10 +351,11 @@ head, body{
 }
 
 #buttondiv{
+    background-color: #161616;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -1vw;
+    padding-bottom: 4vw;
 }
 
 #buttondiv button{
@@ -333,12 +367,13 @@ head, body{
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
-    transition: all ease 0.8s;
+    transition: all ease 0.3s;
+    color: #fff;
 }
 
 #buttondiv button:hover{
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
 }
 
 #newday{
@@ -464,9 +499,22 @@ head, body{
 }
 
 #footerend #fright #frighttop a{
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-size: 1.1vw;
+    padding-bottom: 3px;
+}
+
+#frighttop a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    background-color: #fff;
 }
 
 #footerend #fright #frightbottom{
@@ -475,7 +523,20 @@ head, body{
 }
 
 #footerend #fright #frightbottom a{
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-size: 1.1vw;
+    padding-bottom: 3px;
+}
+
+#frightbottom a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    background-color: #fff;
 }
